@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="4_contacts.css">
+    <script src="./4_contact_validation.js"></script>
+   
+</head>
+<body>
+<div class="bgi-1">
+    <header class="navigation_head">
+        <h1 class="title">EXISTENZ</h1>
+        <ul class="navigation_bar" style="margin:0;padding:0;list-style: none;">
+          <li><a href="1_index.html" >Home</a></li>
+          <li><a href="2_inspiration.html">Inspiration</a></li>
+          <li><a href="3_depression_survey.html">Depression Survey</a></li>
+          <li><a href="4_contacts.html" style="text-decoration: underline" >Contacts</a></li>
+          <li><a href="5_sign_up_log_in.html">Member</a></li>
+        </ul>
+	</header> 
+</div>
+<div class="first_box_info">
+
+  <h3><u>Contact Form</u></h3>
+
+<div class="container">
+  <form name="contact_form" autocomplete="on" onsubmit="return validation()" method="post">
+    
+    <label for="help">How can we help?</label>
+    <select name="help" id="help">
+      <option value="consultation">Consultation</option>
+      <option value="general enquiry">General Inquiry</option>
+    </select>
+  
+    <label for="first_name"> First Name</label>
+    <input type="text" id="first_name" name="first_name" placeholder="First Name..." pattern="[A-Za-z]+$">
+
+    <label for="Last_name"> Last Name</label>
+    <input type="text" id="last_name" name="last_name" placeholder="Last Name..." pattern="[A-Za-z]+$">
+
+    <label for="Phone_number"> Phone Number</label>
+    <input type="tel" id="phone_number" name="phone_number" placeholder="Ex:+60109285892..." pattern="(\+?6?01)[02-46-9]-*[0-9]{7}$|^(\+?6?01)[1]-*[0-9]{8}$">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Email..." pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3})+$">
+
+    <label for="message">Your message</label>
+    <textarea id="message" name="message"style="height:250px"></textarea>
+
+    <input type="submit" value="submit" name="submit" style="margin:0px auto; display:block; text-transform:uppercase;">
+  </form>
+  
+</div>
+</div>
+<footer class="footer_box">
+  <div class = "footer_container">
+
+      <div class="footer_grid_container">
+          <div class="grid_elements">
+              
+              <img src="wbesite_logo.jpg" style="display: block;margin-left: auto;margin-right: auto" width="150px" height="auto">
+
+          </div>
+
+          <div class="grid_elements inner_footer_grid_container">
+              
+              <div class="grid_elements">
+                  <h5 style="font-size:20px; margin:0">About Us</h5>
+                  <ul>
+                      <li>
+                        Call (8.30am - 5.30pm)
+                        <br>
+                        03 - 47396542  
+                        <br>
+                        03 - 85620498
+                      </li>
+                  </ul>
+              </div>
+              <div class="grid_elements">
+                  <h5 style="font-size:20px; margin:0;">Mailing Address</h5>
+                  <ul>
+                      <li>
+                           39 Lrg Titiwangsa 2 Taman Bukti<br>70400 Seremban<br>Negeri Sembilan
+                      </li>
+                  </ul>
+              </div>  
+              <div class="grid_elements">
+                <h5 style="font-size:20px; margin:0;">Social Media</h5>
+                <ul div class="link">
+                    <li>
+                         <a href="https://www.facebook.com/groups/4958573144176306/?ref=share&mibextid=KtfwRi" target="_blank" style="text-decoration:none;">Facebook.com</a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/realdepressionproject?igshid=YmMyMTA2M2Y=" target="_blank" style="text-decoration:none;">Instagram.com</a>
+                    </li>
+                    <li>
+                        <a href="https://pin.it/5Xy0rwE" target="_blank" style="text-decoration:none;">Pinterest.com</a>
+                    </li>
+                </ul>
+              </div>     
+          </div>
+      </div>
+      <hr>
+
+      <p>Copyright © 2022 | Sunway University | EXISTENZ All Rights Reserved</p>
+
+  </div>
+</footer>
+</body>
+</html>
